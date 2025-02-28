@@ -4,8 +4,6 @@ from PyQt6.QtWidgets import QApplication,QMainWindow,QWidget,QVBoxLayout, QHBoxL
 from PyQt6 import QtCore
 from PyQt6.QtGui import QFont
 from PyQt6.QtCore import QObject, QThread, pyqtSignal, Qt, QTimer
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-import matplotlib.pyplot as plt
 import pandas as pd
 from scipy.optimize import curve_fit, differential_evolution
 from scipy.signal import find_peaks
@@ -15,9 +13,7 @@ import arviz as az
 from scipy.signal import savgol_filter
 from scipy.signal import savgol_filter, find_peaks
 import pytensor
-import seaborn as sns
 import ruptures as rpt
-import os
 import pyqtgraph as pg    
 from time import sleep    
 from openpyxl import Workbook, load_workbook
